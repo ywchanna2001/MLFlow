@@ -1,0 +1,23 @@
+[project]
+name = "mlflow-learning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Channa Dissanayaka", email = "ywchanna@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langchain[openai]>=1.4.6",
+    "mistralai>=3.2.0",
+    "mlflow>=3.17.1",
+    "openai>=3.31.0",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+mlflow = "mlflow:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
