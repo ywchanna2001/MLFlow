@@ -8,6 +8,8 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "google-genai>=2.31.0",
+    "langchain-google-genai>=4.4.2",
     "langchain[openai]>=1.4.6",
     "mistralai>=3.2.0",
     "mlflow>=3.17.1",
@@ -16,7 +18,7 @@ dependencies = [
 ]
 
 [project.scripts]
-mlflow = "mlflow:main"
+mlflow-learning = "mlflow_learning:main"
 
 [build-system]
 requires = ["uv_build>=0.12.23,<0.13.0"]
