@@ -1,3 +1,5 @@
 .env
 .venv
 src/mlflow_learning/tempCodeRunnerFile.py
+src/mlflow_learning/__pycache_
+mlflow.db
