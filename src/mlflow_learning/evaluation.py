@@ -24,7 +24,7 @@ def ask_agent(question: str) -> str:
             system_instruction="You are a helpful assistant. Answer questions concisely.",
         ),
     )
-    return response.text
+    return response.choices[0].message.content 
 
 
 eval_dataset = [
